@@ -1,4 +1,4 @@
-# Initial vector discovery and use-case (CWE-200, CWE-346)
+# Initial vector discovery and use-case 04-2026 (CWE-200, CWE-346)
 Password reset link poisoning via attacker controlled baseUrl leads to reset token exposure and possible account takeover:
 
 https://github.com/user-attachments/assets/39110aa1-3b91-4ca0-865c-9f1271cc635f
@@ -32,7 +32,7 @@ as a production ready resolution. Water was thrown on the flame but the embers w
 left still sitting to build up to an inevitable outcome that was bound, fated to occur within
 a matter of time. 
 
-#Embers to flame, to embers again, then back again sparked to flame
+09-2026
 
 https://github.com/user-attachments/assets/e653bde8-ef79-4a23-9cda-2356d4b63f44
 
