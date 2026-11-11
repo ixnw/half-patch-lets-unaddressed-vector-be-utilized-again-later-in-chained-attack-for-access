@@ -1,7 +1,14 @@
-# Initial discovery of the vector
+# Initial vector discovery and use-case (CWE-200, CWE-346)
+Password reset link poisoning via attacker controlled baseUrl leads to reset token exposure and possible account takeover:
 https://github.com/user-attachments/assets/39110aa1-3b91-4ca0-865c-9f1271cc635f
+The forgot-password endpoint trusts a user supplied baseUrl when generating reset links. This allows an attacker to trigger a legitimate password reset email to a victim that contains an attacker controlled link. When clicked, the victim’s browser sends the victim’s email and reset token to the attacker’s domain: 
+**https://[attacker controled domain]/?email=[victim email]&token=[victim token]** 
+thus allowing the attacker to reuse the token on the legitimate reset-password page: 
+**https://app.candid.org/reset-password?email=[victim email]&token=[victim token]**
+Allowing flawless account takeover.
 
-# How this vulnerability was initially resolved 
+# How this vulnerability was initially resolved and why the resolution was only a temporary work around
+
 
 
 https://github.com/user-attachments/assets/9be0ad58-fda7-40e6-a3a6-7e812cef52ba
