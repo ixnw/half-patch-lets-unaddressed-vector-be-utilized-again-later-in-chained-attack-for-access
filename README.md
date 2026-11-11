@@ -13,10 +13,6 @@ Allowing flawless account takeover.
 
 
 
-https://github.com/user-attachments/assets/9be0ad58-fda7-40e6-a3a6-7e812cef52ba
-
-
-
 # The result of this work around was...
 A persistent vector that was ignored, which although it was no longer able to be 
 utilized poking the same vulnerability, it was still in fact useful, but it just took 
