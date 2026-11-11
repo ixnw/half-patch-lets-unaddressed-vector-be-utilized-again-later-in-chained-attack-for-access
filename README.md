@@ -43,18 +43,6 @@ https://github.com/user-attachments/assets/4ef9ad9a-90e6-4499-bc6f-66072edd5a2d
 # Written PoC of full attack chain process from start to session hijack
 # app.candid.org Password Reset Poisoning to Session Hijacking via Open Redirect and XSS on store.candid.org
 
-Estimate of this attack chain's severity:
-- Critical range of 9.0-9.3:  
-	 **CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N;**
-- Reasoning:  
->	**AV:N** - remotely exploitable over the internet.  
->	**AC:L** - once the the actual chain is constructed/prepared the complexity is low (ie not dependent on winning a timing, bypassing randomization, prediction of randomization, using rare browser configurations, or relying on any kind of specific unstable conditions)  
->	**PR:N** - attacker does not need an authenticated session.  
->	**UI:R** - victim must click the reset link from their email inbox.  
->	**S:C** - Successful exploitation impacts a security authority beyond the component initially accepting the manipulated password-reset request. The chain begins on `app.candid.org` and ultimately affects the victim’s authenticated session on `shop.candid.org`.
->	**C:H** - attacker can access the victim’s private account information.  
->	**I:H** - attacker can perform authenticated actions as the victim.  
->	**A:N** - no availability impact demonstrated.
 ##### Relevant Vulnerabilities that Facilitate This Chain:
 **app.candid.org**
 - **CWE-640:** Password reset link poisoning issue in POST request to forgotPassword api by manipulating baseUrl parameter
