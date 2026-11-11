@@ -9,6 +9,8 @@ thus allowing the attacker to reuse the token on the legitimate reset-password p
 **https://app.candid.org/reset-password?email=[victim email]&token=[victim token]**
 Allowing flawless account takeover.
 
+[Password_Reset_Poisoning_Acknowledgement_Letter_REDACTED.pdf](https://github.com/user-attachments/files/34696752/Password_Reset_Poisoning_Acknowledgement_Letter_REDACTED.pdf)
+
 # How this vulnerability was initially resolved and why the resolution was only a temporary work around
 The initial fix only restricted the supplied baseUrl to just app.candid.org, which did block the original technique of replacing the baseUrl domain with a domain controlled by the attacker, directly sending that domain with the reset email directly attaching the victim reset token to the malicious base domain and leaking the reset token when the victim clicked their special reset url.  
 However, the attacker could still control the path and query parameters within that permitted domain. At that point I thought this was a direct lead/path to another vulnerability, only to realize a couple hours later this time the path of attack wouldn't be handed to me again on a golden platter like it had been the first time. I knew that I was going to have to find an open redirect on the same subdomain for this vector to still be utilized. 
@@ -136,21 +138,4 @@ Attacker server redirects victim to vulnerable **shops.candid.org** endpoint (lo
 - <img width="226" height="106" alt="image" src="https://github.com/user-attachments/assets/79af0f1b-7059-4b7c-97f7-71633ecbbd57" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Session_Hijacking_Chain_Acknowledgement_Letter_REDACTED.pdf](https://github.com/user-attachments/files/34696745/Session_Hijacking_Chain_Acknowledgement_Letter_REDACTED.pdf)
