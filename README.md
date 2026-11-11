@@ -30,8 +30,11 @@ left still sitting to build up to an inevitable outcome that was bound, fated to
 a matter of time. 
 
 #Embers to flame, to embers again, then back again sparked to flame
+
 https://github.com/user-attachments/assets/e653bde8-ef79-4a23-9cda-2356d4b63f44
+
 https://github.com/user-attachments/assets/78e361c8-4ea0-44e7-9e40-ef9ce09d02e0
+
 https://github.com/user-attachments/assets/4ef9ad9a-90e6-4499-bc6f-66072edd5a2d
 
 # Written PoC of full attack chain, start to finish, vector \#1 to session hijack 
